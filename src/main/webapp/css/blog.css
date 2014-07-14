@@ -1,0 +1,32 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+i,em{font-style: italic;}
+.fix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.fix{zoom:1;}
+body{color: #666;font: normal 12px/1.8 "\5B8B\4F53",tahoma,arial;}
+/*注册 */
+
+.app{width:990px;margin:0 auto;}
+#header{height: 100px;position:relative;}
+#header h1{width: 140px;height: 35px;position: absolute;bottom: 32px;background: url("images/logo.png")}
+#header h2{padding-left: 10px;position:absolute;left: 150px;bottom: 28px;background: url("images/dot.jpg")no-repeat 0 50%;font:  normal 20px/1.6 "\5FAE\8F6F\96C5\9ED1","\534E\6587\7EC6\9ED1","\9ED1\4F53";}
+.steps{width:990px;height: 35px;background: url("images/steps.png") no-repeat 0 0;}
+.reg{margin-top:40px;}
+.reg .form{width:600px;float: left;}
+.reg .form .inpt{padding:0 0 20px 100px;}
+.reg .form .inpt .label{float: left;width:100px;margin-left: -100px;height: 28px;line-height: 28px;text-align: right;}
+.reg .form .inpt .itxt{width: 181px;padding: 1px 3px;height: 26px;line-height: 26px;color: #666;border:1px solid #ccc}
+.reg .form .inpt  .short{width: 65px}
+.reg .form .inpt .valid{vertical-align:bottom;width: 60px;height: 28px;line-height: 26px;text-align: center;padding:0 5px;display: inline-block;border: 1px solid #ccc;}
+.reg .form .inpt .err_inpt{border-color:#ff8080;}
+.reg .form .inpt .msg{width:300px;display: inline-block;zoom:1;vertical-align: top;position:relative}
+.reg .form .inpt .msg .msg_warn{width: 300px;line-height: 18px;color: #666;position: absolute;padding:5px 5px 5px 25px;display: inline-block;zoom:1}
+.reg .form .inpt .msg .msg_warn i{display: inline;float: left;margin-left: -20px;width: 16px;height: 16px;background: url("images/tip.png") no-repeat 0 -160px}
+.reg .form .inpt .msg .msg_err i{background-position: 0 0;}
+.reg .form .inpt .msg .msg_suc i{background-position: 0 -200px;}
+.reg .form .inpt .psw_streng{width: 189px;margin-top: 3px;height: 14px;background: #ffd099;position: relative;overflow: hidden}
+.reg .form .inpt .psw_streng .pwd_bar{width:62px;height: 14px;background-color: #f60;-webkit-transition: all 0.4s linear;-moz-transition: all 0.4s linear;-ms-transition: all 0.4s linear;-o-transition: all 0.4s linear;transition: all 0.4s linear;}
+.reg .form .inpt .psw_streng .pwd_lev{position: absolute;left: 0;top: 0;}
+.reg .form .inpt .psw_streng .pwd_lev span{float: left;height: 14px;width: 62px;font-size: 12px;text-align: center;line-height: 14px;color: #fff;border-right:1px solid #fff}
+.reg .form .inpt .sbtn{width: 135px;height: 33px;line-height: 33px;text-align: center;font-size: 14px;color: #fff;border:none;font-weight: bold;text-decoration: none;background: url("images/btn.png") no-repeat 0 0;text-shadow: 1px 1px 0 #e24e06;}
+/*.reg .form.inpt .msg .msg_error .msg_con{line-height: 18px;position: }*/

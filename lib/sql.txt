@@ -1,0 +1,15 @@
+新闻表(MongoDB/MySQL)
+create table news(id int(4)not null auto_increment,title varchar(254),source varchar(100),brief varchar(254),industry varchar(100),category varchar(100),content text,statistics int,createTime timestamp,modifyTime timestamp,primary key(id));
+
+
+图片新闻表(MongoDB)
+
+技术博文表
+
+提问表
+
+回答表
+
+普通用户表
+
+企业用户表
