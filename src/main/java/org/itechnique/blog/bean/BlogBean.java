@@ -15,31 +15,23 @@ public class BlogBean implements Serializable {
 
     // 序号
     @Id
-    private String            id;
-
+    private String id;
     // 标题
-    private String            title;
-
+    private String title;
     // 来源
-    private String            source;
-
+    private String source;
     // 作者
-    private String            author;
-
+    private String author;
     // 内容
-    private String            content;
-
+    private String content;
     // 所在行业
-    private Integer           industry;
-
+    private Integer industry;
     // 所在类别
-    private Integer           category;
-
+    private Integer category;
     // 创建时间
-    private Date              createTime;
-
+    private Date createTime;
     // 修改时间
-    private Date              modifyTime;
+    private Date modifyTime;
 
     public String getId() {
         return id;
