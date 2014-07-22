@@ -15,9 +15,9 @@
 	<bean id="dataSource"
         class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-        <property name="url"  value="jdbc:mysql://localhost:3306/itechnique"> </property>
-        <property name="username" value="root"></property>
-        <property name="password" value="zhaowen"></property>
+        <property name="url"  value="jdbc:mysql://10.22.2.150:3306/itechnique"> </property>
+        <property name="username" value="zhaowen"></property>
+        <property name="password" value="201314"></property>
     </bean>
 
     <!-- sqlSession给spring托管配置 -->

@@ -6,6 +6,8 @@ import java.util.Map;
 import org.apache.ibatis.session.SqlSession;
 import org.itechnique.web.passport.bean.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
 
@@ -19,8 +21,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class OAuth {
     
-    @Autowired
-    SqlSession sqlSession;
+    private ApplicationContext context = new ClassPathXmlApplicationContext("conf/spring/spring-ibatis.xml");
+    
+    private SqlSession sqlSession = context.getBean(SqlSession.class);
+            
+/*    @Autowired
+    SqlSession sqlSession;*/
     
     /**
      * 功能描述：根据用户名查询用户信息
@@ -60,6 +66,16 @@ public class OAuth {
     
     public void updateEnable(User user){
         sqlSession.update("ITECHNIQUE_USER.UPDATEENABLE", user);
+    }
+    
+    public static void main(String[] args) {
+        User user = new User();
+        user.setUsername("vince");
+        user.setPassword("201314");
+        user.setRoles("admin");
+        user.setPermission("allow");
+        user.setEnable(1);
+        new OAuth().insertUser(user);
     }
     
 }

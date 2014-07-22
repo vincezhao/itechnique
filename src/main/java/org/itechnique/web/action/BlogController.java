@@ -26,6 +26,7 @@ public class BlogController {
      */
     @RequestMapping("view")
     public String viewBlog(){
+        
         return "";
     }
     
@@ -34,6 +35,7 @@ public class BlogController {
      */
     @RequestMapping("create")
     public String createBlog(){
+        
         return "";
     }
     

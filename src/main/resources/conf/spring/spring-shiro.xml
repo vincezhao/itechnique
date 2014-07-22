@@ -16,7 +16,7 @@
 							http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 
-<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean"> 
+<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
    <property name="securityManager" ref="securityManager"/> 
    <property name="loginUrl" value="/logon.htm"/> 
    <property name="successUrl" value="/index.htm"/> 
@@ -39,7 +39,7 @@
 
  <bean id="securityManager" 
    class="org.apache.shiro.web.mgt.DefaultWebSecurityManager"> 
-   <property name="realm" ref="myShiroRealm"/> 
+   <property name="realm" ref="myShiroRealm"/>
  </bean> 
 
  <bean id="myShiroRealm" class="org.itechnique.web.shiro.ShiroRealm"> 
@@ -56,7 +56,6 @@
 
  <bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"/>
 
- <bean id="formAuthenticationFilter" 
-   class="org.apache.shiro.web.filter.authc.FormAuthenticationFilter"/>
+ <bean id="formAuthenticationFilter" class="org.apache.shiro.web.filter.authc.FormAuthenticationFilter"/>
 
 </beans>

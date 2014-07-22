@@ -10,7 +10,7 @@
 	</select>
 	
 	<insert id="INSERT" parameterType="org.itechnique.web.passport.bean.User">
-		INSERT INTO user(username,password,enable) VALUES(#{username},#{password},#{enable})
+		INSERT INTO user(username,password,roles,permission,enable) VALUES(#{username},#{password},#{roles},#{permission},#{enable})
 	</insert>
 	
 	<update id="UPDATEPWD" parameterType="org.itechnique.web.passport.bean.User">
